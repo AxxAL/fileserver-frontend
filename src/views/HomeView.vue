@@ -8,7 +8,7 @@ export default {
 
     methods: {
         async getFiles() {
-            await fetch("https://api.files.axxal.net/list")
+            await fetch("https://api-files.axxal.net/list")
                 .then(async response => {
                     response = await response.json();
                     this.files = response.fileList;
